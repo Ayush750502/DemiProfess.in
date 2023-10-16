@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Myself</title>
+    <link rel="icon" type="icon" href="media/favicon.ico">
+	<link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+	<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+	<script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+	<script src="lib\jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h3 style="background-color: rgb(20, 133, 247); padding: 1%; color: white ; width: 100%;"><a href="DemiProfess.html" style="color: white; text-align: right; width : 100%"><</a> About Us
+    </h3>
+    <div class="container-fluid" style="padding: 20px;">
+        <h1 align="center" id="name">Ayush Goyal</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Profile Picture -->
+                <img loading="lazy" src="media/aboutUs.jpg" alt="Profile Picture" class="img-thumbnail">
+            </div>
+            <div class="col-md-8">
+                <!-- Profile Information -->
+                <p><span class="badge badge-danger">Email :</span> ayush750502@gmail.com</p>
+                <address><span class="badge badge-secondary">Location :</span> 91/A , Nadi Rispana , D.L road , Block2 , <br> Dehradun , Uttarakhand , Pin code : 248001</address>
+                <p><span  class="badge badge-primary">Interests:</span> Web Development, Music, Photography</p>
+                <p class="badge badge-warning">About Me :</p>
+                <p>As I am pursuing Bachelor's in Technology with Computer Science and Engineering, I am eager to learn more about software development. I possess a strong foundation in programming languages like Java and Python, coupled with a passion for solving complex problems. I am a quick learner and thrive in collaborative team environments. I am seeking an entry-level role where I can apply my technical skills, contribute to meaningful projects, and continue to grow as a software engineer.</p>
+            </div>
+        </div><br>
+                <h2 class="badge badge-info" style="width: 100%; height: 50px; font-size: 25px;"><u>Some of my learning :</u></h2><br>
+                <div class="row" style="padding: 30px;">
+                <div class="card cols-6" style="width:400px">
+                    <img loading="lazy" class="card-img-top" src="media/AutomateBoringStuffWithPython.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <h4 class="card-title">Python Programming :</h4>
+                    </div>
+                </div>
+                <div class="card col-6" style="width:400px"><br>
+                    <img loading="lazy" class="card-img-top" src="media/JavaScriptSimpleImage.jpg" alt="Card image" style="height:65%; width: 101%;">
+                    <div class="card-body">
+                    <h4 class="card-title">JavaScript :</h4>
+                    </div>
+                </div><br>
+        </div>
+        <div class="badge badge-dark" style="width: 100%;">
+            <h2>Thanks for Visiting!<br>
+                I hope you found it of your liking.
+            </h2>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS and jQuery links (for Bootstrap components that require JavaScript) -->
+    <script>
+        $(document).ready(function(){
+            $("#name").fadeOut();
+            $("#name").fadeIn(3000);
+            $("#name").mouseover(function(){
+                $("#name").fadeOut(2000);
+                $("#name").fadeIn(2000);
+            });
+        });
+    </script>
+</body>
+</html>

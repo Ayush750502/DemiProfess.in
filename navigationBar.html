@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+	<script src="bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+	<script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <title>navBar</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="DemiProfess.html"><h3>DemiProfess.in</h3></a>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item" href="aboutUs.html">About Us</a></li>
+              <li><a class="dropdown-item" href="loginDemiProfess.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+      <script src="lib/jquery-3.7.1.js"></script>
+      <script>
+        $(document).onready(function(){
+          $(".nav-list").fadeOut();
+          $(".navbar-toggle-icon").click(function(){
+            $(".nav-list").fadeToggle(1500);          
+          });
+        });
+      </script>
+      <style>
+        a{
+          color :white;
+        }
+          nav{
+              background-color: rgb(20, 133, 247);
+          }
+          .navbar-brand{
+              color: white;
+          }
+          .nav-item{
+              color: white;
+          }
+          li{
+              padding: 1%;
+              padding-left: 5%;
+          }
+          .dropdown-item{
+            color:white;
+          }
+          .dropdown-menu{
+            background-color: rgb(20, 133, 247);  
+          }
+          .bg-info{
+            background-color: rgb(20, 133, 247);
+            color: white;
+            border-color: rgb(20, 133, 247);
+          }
+          .dropdown{
+            padding-left: 50px;
+          }
+          .btn{
+            background-color: rgb(20, 133, 247);
+            border-radius: rgb(20, 133, 247);
+          }
+    </style>
+</body>
+</html>
